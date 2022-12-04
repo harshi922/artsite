@@ -1,0 +1,144 @@
+body{
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    text-align:center;
+  }
+  /* headings */
+  h1,h2,h3,h4,h5,h6{
+    font-family: 'Merriweather-Black', serif;
+  }
+  .big-header{
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: left;
+    margin: 5% 5% 20%;
+  }
+
+  /* Containers */
+  #title .container-fluid, #cta .container-fluid{
+    padding: 3% 3% 3%;
+    background-color: #8785a2;
+    color: #fff;
+  }
+  #pricing .container-fluid, #footer .container-fluid, #features .container-fluid{
+    background-color: #fff;
+    padding: 5% 15% 5%;
+  }
+  #features .container-fluid{
+    padding-top: 7%;
+  }
+  #press .container-fluid, #testimonials .container-fluid{
+    background-color: #ffc7c7;
+    color: #fff;
+  }
+
+  /* Title*/
+  .logo{
+      height: 70%;
+      width: 70%;
+  }
+
+  .bar-color{
+      background-color: #ffc7c7 ;
+      color: black;
+  }
+  .navbar{
+    padding: 0 0 4.5rem;
+  }
+  .prog-bar-txt{
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+  }
+
+  .nav-item{
+    padding: 0 18px;
+  }
+  .nav-link{
+    font-size: 1.2rem;
+    font-family: "Merriweather-Light",sans-serif;
+  }
+  .Download-Margin{
+    margin: 5% 12% 5% 0;
+  }
+  .titleimage{
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    left: 55%;
+  }
+
+  /* Features */
+  #features {
+    position: relative;
+  }
+  .featurecol{
+    padding: 5px;
+  }
+  .carousel-item{
+    padding: 7% 15%;
+  }
+  .Title-p-text{
+    color: gray;
+  }
+
+  /* Testimonials */
+  .testimonial-image{
+    width: 50%;
+    margin:20px;
+  }
+  .testimonial-text{
+  font-size: 2.5rem;
+  }
+  .icon{
+    color: #ffe2e2;
+    padding-bottom: 1rem;
+  }
+  .icon:hover{
+    color:#ffc7c7;
+  }
+  .Testimonial-p-text{
+    color: gray;
+  }
+
+  /* Pricing */
+  .pricing-text
+  {
+    line-height: 1.5;
+    font-size: 2.5rem;
+    padding : 0% 15% 3%;
+
+  }
+  .Pricing-p-text{
+    color: gray;
+    padding-bottom: 5%;
+    padding-top: 5%;
+  }
+
+  /* CTA */
+  .cta-text{
+    padding: 3%;
+  }
+
+  .card-color{
+      background-color: #ffc7c7;
+      color: #fff;
+  }
+
+  /* Footer */
+  .footer-btn{
+    margin: 40px;
+  }
+  .Footer-p-text{
+    color: gray;
+  }
+
+  /* Media Queries */
+  @media (max-width:1028px)  {
+    .titleimage
+    {
+      position: static;
+      transform: rotate(0);
+      width: 70%;
+    }
+  }  

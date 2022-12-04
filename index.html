@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CoviPaint</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <!--JQuery link-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0810bfd992.js" crossorigin="anonymous"></script>
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div>
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <a class="navbar-brand me-auto ps-2" href=""><img class="logo" src="logo.svg"></img></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav ms-auto pe-2">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="gallery.html">Gallery</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="commissions.html">Commissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="signin.html">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Title -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="big-header">Help us make a difference creatively.</h1>
+                    <nav class="navbar navbar-expand-lg navbar-dark">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav pe-2">
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#testimonials">Testimonials</a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card text-dark bg-light mb-3">
+                        <div class="card-header">100% of our funds collected go to Covid Relied Funds</div>
+                        <div class="card-body">
+                            <h5 class="card-title prog-bar-txt">Our Progress so far</h5>
+                            <div class="bar">
+                                <!-- Progress bar HTML -->
+                                <div class="progress " style="height: 40px">
+                                    <div class="progress-bar bar-color " style="min-width: 20px;"></div>
+                                </div>
+
+                                <!-- jQuery Script -->
+                                <script>
+                                    var i = 0;
+                                    function makeProgress() {
+                                        if (i < 60) {
+                                            i = i + 1;
+                                            $(".progress-bar").css("width", i + "%").text(i + " %");
+                                        }
+                                        setTimeout("makeProgress()", 100);
+                                    }
+                                    makeProgress();
+                                </script>
+                                <div class=" prog-bar-txt">
+                                    <h6>Our goal is Rs.25,000/-</h6>
+                                </div>
+                                <a href="commissions.html" class="btn btn-dark btn-lg" role="button"
+                                    data-bs-toggle="button"><i class="fas fa-donate"></i> Donate Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section id="features">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 featurecol ">
+                    <i class="fas fa-check-circle fa-4x icon"></i>
+                    <h3>All Commissions accepted</h3>
+                    <p class="Title-p-text">Order can be made for graphite, color pencil and acrylic paintings</p>
+                </div>
+                <div class="col-md-4  featurecol">
+                    <i class="fas fa-virus-slash fa-5x icon"></i>
+                    <h3>Covid Safe</h3>
+                    <p class="Title-p-text">We deliver your paintings safely through non contact delivery</p>
+                </div>
+                <div class="col-md-4  featurecol">
+                    <i class="fas fa-heart fa-4x icon"></i>
+                    <h3>Made with love</h3>
+                    <p class="Title-p-text">Every painting is made with care and patience to give you the best
+                        experience</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials -->
+    <section id="testimonials">
+        <div class="container-fluid">
+            <div id="testimonial-carousel" class="carousel slide" data-bs-ride="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h2 class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            sapien erat, convallis ut lacinia vel, fermentum vitae nisl. Cras in aliquam nisi. Ut porta
+                            eros libero, a dapibus libero iaculis ac. Morbi luctus quis ex eget aliquam. </h2>
+                        <img class="testimonial-image" src="images/painting1.jpeg" alt="painting1">
+                        <em>lorem ipsum, dolor sit</em>
+                    </div>
+                    <div class="carousel-item">
+                        <h2 class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                            sapien erat, convallis ut lacinia vel, fermentum vitae nisl. Cras in aliquam nisi. Ut porta
+                            eros libero, a dapibus libero iaculis ac. Morbi luctus quis ex eget aliquam. </h2>
+                        <img class="testimonial-image" src="images/painting2.jpeg" alt="painting2">
+                        <em>lorem ipsum, dolor sit</em>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- Pricing -->
+    <section id="pricing">
+        <div class="container-fluid">
+            <h2 class="pricing-text">A Picture for Every Occasion</h2>
+            <p class="Pricing-p-text">Affordable paintings for you and your loved ones</p>
+            <div class="row mx-auto">
+                <div class="col col-md-4 col-sm-6">
+                    <div class="card card-color">
+                        <div class="card-header">
+                            <h3>Graphite Pencil Sketches</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="pricing-text">Starts at Rs.500/-</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4 col-sm-6">
+                    <div class="card card-color">
+                        <div class="card-header">
+                            <h3>Color Pencil Sketches</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="pricing-text">Starts at Rs.800/-</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="card card-color">
+                        <div class="card-header">
+                            <h3>Acrylic Paintings</h3>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="pricing-text">Starts at Rs.2000/-</h2>
+                        </div>
+                    </div>
+                </div>
+                <p class="Pricing-p-text">*Prices will vary based on Picture Complexity</p>
+            </div>
+        </div>
+    </section>
+    <!-- Call to Action -->
+    <section id="cta">
+        <div class="container-fluid">
+            <h3 class="cta-text">Donate now to make a difference</h3>
+            <div class="text-center">
+                <a href="commissions.html" class="btn btn-dark btn-lg" role="button" data-bs-toggle="button"><i
+                        class="fas fa-donate"></i> Donate Now</a>
+            </div>
+    </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class=" container-fluid">
+            <div class="text-center">
+                <i class="fotter-btn fab fa-fw fa-instagram"></i>
+                <i class="fotter-btn fas fa-fw fa-envelope"></i>
+            </div>
+            <p class="Footer-p-text">© Copyright 2021 CoviPaint</p>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
